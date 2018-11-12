@@ -1,14 +1,8 @@
 /*
 * Style
 */
-
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
 /*
-* Google font
-*/
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto");
-
-
 /*
 * Section - Home
 */
@@ -17,6 +11,13 @@ body {
     background-color: #252529;
     margin: 0;
     color: #fff;
+    font-family: 'Bubblegum Sans', cursive;
+}
+.logo{
+    font-size: 1.5rem
+}
+.content-main{
+    margin-top: 30vh
 }
 .parallax { 
     /* The image used */
@@ -55,7 +56,6 @@ a {
     padding: 10rem 0;
 }
 
-
 .section {
     height: 100vh;
     padding: 2rem 0;
@@ -65,9 +65,6 @@ a {
 
 
 
-.section-main {
-     
-  }
 /*
 * Footer
 */
@@ -120,24 +117,17 @@ a {
   footer .footer-bottom {
     padding: 0.5rem;
   }
-@media (max-width: 1199px) and (min-width: 991px){
-   .logo-small{
-    display:block;
-   }
-   .logo-large{
-    display:none;
-   }
-}
+
 
 @media (max-width: 450px){
-   .logo-small{
-    display:block;
-   }
-   .logo-large{
-    display:none;
-   }
-    .hide-on-small{
+    .content-main {
+        margin-top: 10vh;
+    }
+    .hide-on-small {
         display: none;
+    }
+    .section{
+        height: fit-content;
     }
 }
 
@@ -146,4 +136,14 @@ a {
     #social .fa{
         font-size:1em;
     }
+    .content-main {
+        margin-top: 10vh;
+    }
+    .hide-on-small {
+        display: none;
+    }
+    .section{
+        height: fit-content;
+    }
 }
+
